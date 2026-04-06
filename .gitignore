@@ -5,3 +5,4 @@ _site
 vendor
 # Obsidian Vault
 .obsidian
+template/
