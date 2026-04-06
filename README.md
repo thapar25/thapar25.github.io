@@ -5,6 +5,7 @@
 
 A knowledge base blog powered by Obsidian and Jekyll. Articles are drafted in Obsidian, converted to Markdown, and automatically published to GitHub Pages.
 
+[![pages-build-deployment](https://github.com/thapar25/thapar25.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/thapar25/thapar25.github.io/actions/workflows/pages/pages-build-deployment)
 ---
 
 ## ⚙️ Project Structure Overview
