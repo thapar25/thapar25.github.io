@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:" It will appear 
   Hello, world! This is Pulkit Thapar's vault of notes, wins and lessons from building in tech.
   Writing about AI, open-source, and hobby projects. Mostly the journey, sometimes the opinion, rarely the feelings.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://thapar25.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://thapar25.github.io"
 twitter_username: pulkitthapar
 github_username:  thapar25
 linkedin_username: pulkit-thapar
@@ -31,7 +31,7 @@ google_analytics: G-WKR7C1KL9R
 image: /assets/og-image.png
 
 # Build settings
-theme: minima #TODO: https://chirpy.cotes.page/
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap 
