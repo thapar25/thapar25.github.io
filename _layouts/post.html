@@ -1,0 +1,82 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <div class="post-title-row">
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <button class="copy-md-btn" onclick="copyAsMarkdown()" title="Copy post as Markdown for LLMs">Copy</button>
+    </div>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      <span class="copy-md-confirm" style="display:none;">Copied!</span>
+    </p>
+    {%- if page.tags and page.tags.size > 0 -%}
+    <p class="post-tags">
+      {%- for tag in page.tags -%}
+        <span class="post-tag">{{ tag }}</span>
+      {%- endfor -%}
+    </p>
+    {%- endif -%}
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+</article>
+
+<script>
+function copyAsMarkdown() {
+  var content = document.querySelector('.e-content');
+  var clone = content.cloneNode(true);
+
+  // Remove images
+  clone.querySelectorAll('img, picture, figure').forEach(function(el) { el.remove(); });
+
+  // Convert HTML to plain markdown-ish text
+  var md = '# {{ page.title | escape }}\n\n' + htmlToMarkdown(clone);
+
+  navigator.clipboard.writeText(md.trim()).then(function() {
+    var confirm = document.querySelector('.copy-md-confirm');
+    confirm.style.display = 'inline';
+    setTimeout(function() { confirm.style.display = 'none'; }, 2000);
+  });
+}
+
+function htmlToMarkdown(el) {
+  var out = '';
+  el.childNodes.forEach(function(node) {
+    if (node.nodeType === 3) { // text node
+      out += node.textContent;
+    } else if (node.nodeType === 1) {
+      var tag = node.tagName.toLowerCase();
+      var inner = htmlToMarkdown(node);
+      if      (tag === 'h1') out += '# ' + inner + '\n\n';
+      else if (tag === 'h2') out += '## ' + inner + '\n\n';
+      else if (tag === 'h3') out += '### ' + inner + '\n\n';
+      else if (tag === 'h4') out += '#### ' + inner + '\n\n';
+      else if (tag === 'p')  out += inner + '\n\n';
+      else if (tag === 'strong' || tag === 'b') out += '**' + inner + '**';
+      else if (tag === 'em' || tag === 'i')     out += '_' + inner + '_';
+      else if (tag === 'code' && node.closest('pre')) out += inner;
+      else if (tag === 'code') out += '`' + inner + '`';
+      else if (tag === 'pre')  out += '```\n' + inner + '\n```\n\n';
+      else if (tag === 'a')    out += '[' + inner + '](' + node.href + ')';
+      else if (tag === 'li')   out += '- ' + inner + '\n';
+      else if (tag === 'ul' || tag === 'ol') out += inner + '\n';
+      else if (tag === 'blockquote') out += inner.split('\n').map(function(l) { return '> ' + l; }).join('\n') + '\n\n';
+      else if (tag === 'hr')   out += '---\n\n';
+      else if (tag === 'br')   out += '\n';
+      else out += inner;
+    }
+  });
+  return out;
+}
+</script>

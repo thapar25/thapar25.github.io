@@ -1,0 +1,10 @@
+# thapar.logs
+> Personal blog with notes, experiments, and learnings.
+
+## Core
+- / - Homepage
+- /about - About the blog
+- /contact - Contact page
+
+## Posts
+- /posts/... - Blog posts and notes
