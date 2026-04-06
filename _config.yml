@@ -29,7 +29,7 @@ twitter_username: pulkitthapar
 github_username:  thapar25
 
 # Build settings
-theme: minima
+theme: minima #TODO: https://chirpy.cotes.page/
 plugins:
   - jekyll-feed
 
