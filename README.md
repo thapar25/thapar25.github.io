@@ -35,9 +35,13 @@ Every file in `_posts/` **must** begin with this block, adjusting the details be
 layout: post
 title: "Article Title Goes Here"
 date: 2024-05-28 12:00:00 -0500
-slug: clean-slug-for-url
+categories: [category1, category2]
+tags: [tag1, tag2]
+description: "2-3 sentence summary for search results and social sharing"
 ---
 ```
+
+The `description` field is essential for SEO—it appears in search engine results and social media previews.
 
 > ⚠️ **Note:** Obsidian's `.obsidian` folder is correctly added to `.gitignore` and should not be committed.
 
@@ -49,6 +53,19 @@ If you need to test the site locally:
 2.  **Installation:** `bundle install`
 3.  **Serve:** `bundle exec jekyll serve`
 4.  Visit `http://127.0.0.1:4000` in your browser.
+
+## 🔍 SEO Features
+
+The site is optimized for search engines:
+
+- **Meta Tags** — Auto-generated from post descriptions via `jekyll-seo-tag`
+- **Sitemap** — Auto-generated at `/sitemap.xml` for search engine discovery
+- **Robots.txt** — Configured to guide crawler behavior
+- **Open Graph Tags** — Social media preview optimization
+- **RSS Feed** — Content distribution via `/feed.xml`
+- **Google Analytics** — Traffic monitoring and insights
+
+For best SEO results, always include a meaningful `description` in your post front matter.
 
 ## 📖 Built With
 

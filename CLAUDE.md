@@ -32,12 +32,30 @@ title: "Post Title"
 date: YYYY-MM-DD HH:MM:SS +0000
 categories: [category1, category2]
 tags: [tag1, tag2]
+description: "2-3 sentence summary for search results and social sharing"
 ---
 ```
+
+The `description` field is used for:
+- SEO meta descriptions (shown in search engine results)
+- Open Graph tags (social media sharing previews)
+- RSS feed summaries
+
+## SEO Configuration
+
+The site is configured for search engine optimization:
+
+- **`_config.yml`** — Contains `url` (full domain), Google Analytics ID, and sitemap/feed plugins
+- **`robots.txt`** — Allows crawlers and references the sitemap for discovery
+- **`jekyll-seo-tag` plugin** — Automatically generates meta tags, Open Graph tags, and canonical URLs based on front matter
+- **`jekyll-sitemap` plugin** — Generates `sitemap.xml` for search engines
+- **`jekyll-feed` plugin** — Generates RSS feed for content distribution
+
+All posts should include a meaningful `description` in front matter for better SEO performance.
 
 ## Publishing Workflow
 
 1. Write in Obsidian (`_posts/blog/`)
-2. Add Jekyll front matter
+2. Add Jekyll front matter (including `description`)
 3. Move to `_posts/` with `YYYY-MM-DD-title.md` naming
 4. Commit and push — GitHub Pages builds automatically

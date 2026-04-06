@@ -23,10 +23,11 @@ description: >- # this means to ignore newlines until "baseurl:" It will appear 
   Hello world!
   This is a collection of my notes, wins and learnings.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://thapar25.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pulkitthapar
 github_username:  thapar25
 linkedin_username: pulkit-thapar
+google_analytics: G-WKR7C1KL9R
 
 # Build settings
 theme: minima #TODO: https://chirpy.cotes.page/
@@ -34,6 +35,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap 
 
+show_excerpts: false
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
