@@ -53,12 +53,12 @@ Think about every app that asks you to manually enter information: fitness logs,
 
 Voice-to-lock-screen cuts all of that out. I finish a set, tap once, say "12 pull-ups, ate clean today," and move on. That goes into my Notion Fitness Tracker. No app open, no feed in my peripheral vision, no "I'll do it later."
 
-Same for tasks: "Add a note to Read [Hackers and Painters](https://paulgraham.com/hackpaint.html) by Paul Graham" lands in my Hobby Projects board. Scheduling requests go to Donna, my calendar agent. Luna routes everything.
+Same for tasks: *"Add a note to read [Hackers and Painters](https://paulgraham.com/hackpaint.html) by Paul Graham"* lands in my Hobby Projects board. Scheduling requests go to Donna, my calendar agent. Luna routes everything.
 
 ## Luna isn't a chatbot
 This is worth saying clearly: Luna isn't designed for conversation. The priority is to get things done, not generate replies.
 
-When I log a workout, I don't *need* an acknowledgement. When I create a task, I don't *need* it read back to me. The shortcut fires, the agent acts, and my phone reads the response back to me via TTS when there's something worth saying. Most interactions are still fire-and-forget — Luna confirms a task was logged, tells me my next meeting, answers a question. No screen required. The async model isn't a limitation. It's the point.
+When I log a workout, I don't *need* an acknowledgement. When I create a task, I don't *need* it read back to me. The shortcut fires, the agent acts, and my phone reads the response back to me via TTS when there's something worth saying. Most interactions are still fire-and-forget, Luna confirms a task was logged, tells me my next meeting, answers a question. No screen required. The async model isn't a limitation. It's the point.
 
 ## What's next
 
