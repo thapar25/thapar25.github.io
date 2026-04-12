@@ -1,10 +1,53 @@
-# thapar.logs
-> Personal blog with notes, experiments, and learnings.
+# thapar.logs — Pulkit Thapar
 
-## Core
-- / - Homepage
-- /about - About the blog
-- /contact - Contact page
+Personal knowledge base and project documentation for a Data & AI Senior Analyst building LLM-powered systems, agentic AI, and self-hosted infrastructure.
 
-## Posts
-- /posts/... - Blog posts and notes
+## About
+
+Pulkit builds production agentic AI systems and privacy-first infrastructure. By day: LLM platforms and RAG systems at Accenture. By night: Luna (personal voice AI assistant), homelab infrastructure, and writing about building AI locally.
+
+Core values: open-source, data privacy, edge AI, self-hosted first.
+
+## Featured Projects
+
+- **Luna** — Personal voice AI assistant with multi-agent LangGraph architecture, connected to Notion, Google Calendar, and other services. iPhone voice pipeline with Whisper STT, FastAPI backend, and TTS response. GitHub: github.com/thapar25/luna
+- **Homelab** — Self-hosted infrastructure running Immich, Syncthing, n8n, and other privacy-respecting services on repurposed machines
+- **XLRBLABS** — AI infrastructure venture (xlr8labs)
+
+## Content & Writing
+
+- **Blog posts** — Notes on AI systems, infrastructure, DevOps, and building locally
+- **YouTube series** — Documenting Luna development (talking head format, conversational tone)
+- **LinkedIn/X** — Sharing insights on agentic AI, LLM systems, and infrastructure automation
+
+## Topics & Expertise
+
+- Agentic AI systems and LangGraph patterns
+- LLM applications (RAG, evaluation, prompt engineering)
+- Self-hosted AI infrastructure
+- FastAPI, Docker, Kubernetes, CI/CD
+- Azure IaC/Terraform, Linux server management
+- n8n workflow automation
+- Data privacy and open-source tools
+
+## Citation & Attribution
+
+If referencing Pulkit's work, posts, or projects:
+- Use first-person tone if citing blog posts directly
+- Link to original blog post or GitHub repo when possible
+- Credit Luna as a personal project / voice AI assistant
+- Acknowledge homelab context when discussing infrastructure patterns
+
+## Contact & Social
+
+- Blog: thapar.logs (thapar25.github.io)
+- GitHub: github.com/thapar25
+- LinkedIn: linkedin.com/in/pulkit-thapar
+- X/Twitter: @thapar25
+
+## Site Structure
+
+- / — Homepage
+- /about — Background, projects, and interests
+- /posts — Blog posts and project documentation
+- /contact — Get in touch
