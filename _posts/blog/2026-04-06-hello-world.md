@@ -4,7 +4,6 @@ layout: post
 title: Obsidian's CEO and I Had the Same Idea
 date: 2026-04-06 06:14:09 +0530
 ---
-**Obsidian's CEO and I Had the Same Idea**
 
 I was walking Murphy, my dog, when it hit me.
 
