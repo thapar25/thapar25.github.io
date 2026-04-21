@@ -60,6 +60,18 @@ This is worth saying clearly: Luna isn't designed for conversation. The priority
 
 When I log a workout, I don't *need* an acknowledgement. When I create a task, I don't *need* it read back to me. The shortcut fires, the agent acts, and my phone reads the response back to me via TTS when there's something worth saying. Most interactions are still fire-and-forget, Luna confirms a task was logged, tells me my next meeting, answers a question. No screen required. The async model isn't a limitation. It's the point.
 
+## Why Not a Wearable
+
+A quick detour because why reinvent the wheel.
+
+- **[Neo Sapien](https://neosapien.ai/)** is an Indian startup doing interesting work here. Reached out to the founder directly. Hardware was not coming my way, and the device is closed source. Even if I ordered one, there is no path to wiring it to your own backend. Hard pass.
+
+- **[OMI](https://www.omi.me/)** is open source, hackable, and developer-friendly. The problem is battery. Transcription and active task processing drain it fast, which means you are charging a wearable you are supposed to be wearing. That defeats the point.
+
+- **[Pebble Ring](https://repebble.com/index)** is the closest fit. Push-to-talk, not always-listening, completely unobtrusive. The only catch: non-rechargeable. Disposable after roughly a year and a half to two years. A strange trade-off for a device this promising. Top contender. Not yet.
+
+The shortcut wins by elimination for now. Not the dream interface. The honest one.
+
 ## What's next
 
 The next post covers the backend: how I'm running a full multi-agent system at near-zero cost by distributing across LLM providers. [Groq](https://groq.com) for routing, [OpenRouter](https://openrouter.ai) with round-robin key rotation for agents, [Gemini](https://deepmind.google/models/gemini/) as fallback. Plus caching, tool calls, and the feedback loop I'm using to improve Luna over time.

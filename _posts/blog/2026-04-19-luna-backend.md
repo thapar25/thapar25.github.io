@@ -51,18 +51,6 @@ The routing is a single `match` statement. One task, one destination. No mechani
 
 Usage data made this obvious. It kept showing up in the logs. Luna v2 fixes this: the router identifies multi-agent tasks, dispatches to multiple nodes in parallel, and synthesizes a single response. LangGraph supports it. The current graph just does not use it yet.
 
-## Why Not a Wearable
-
-Before the stack, a quick detour because people always ask.
-
-**[Neo Sapien](https://neosapien.ai/)** is an Indian startup doing interesting work here. Reached out to the founder directly. Hardware was not coming my way, and the device is closed source. Even if I ordered one, there is no path to wiring it to your own backend. Hard pass.
-
-**[OMI](https://www.omi.me/)** is open source, hackable, and developer-friendly. The problem is battery. Transcription and active task processing drain it fast, which means you are charging a wearable you are supposed to be wearing. That defeats the point.
-
-**[Pebble Ring](https://repebble.com/index)** is the closest fit. Push-to-talk, not always-listening, completely unobtrusive. The only catch: non-rechargeable. Disposable after roughly a year and a half to two years. A strange trade-off for a device this promising. Top contender. Not yet.
-
-The shortcut wins by elimination for now. Not the dream interface. The honest one.
-
 ## The Underdog Stack
 
 Luna runs on a repurposed college laptop. Ubuntu, homelab, Cloudflare Tunnel. Infrastructure cost: electricity. API cost: close to zero.
