@@ -9,6 +9,7 @@ tags:
   - two-cents
 description: Code was always a medium, not the message. Agents writing and reading code forces a reckoning with what we actually valued about it and why the Arctic Code Vault just got a lot more interesting.
 ---
+![AI-assisted coding bell-curve meme](https://preview.redd.it/just-a-meme-still-maybe-worth-discussion-v0-5susw7fbhzbe1.jpeg?auto=webp&s=daf694ca90eb70e592bd92ae5d60c007d7bd740b)
 
 Code was a medium. Not the product. Not the craft. The medium.
  
