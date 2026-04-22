@@ -12,7 +12,6 @@ description: The perception of GitHub stars as a reliable indicator of project q
 ---
 ## Are Star Histories OSS Milestones?
 
-## Star History
 
 ![Star History Chart](https://api.star-history.com/chart?repos=raga-ai-hub/RagaAI-Catalyst%2Cnousresearch/hermes-agent&type=date&legend=top-left)
 
