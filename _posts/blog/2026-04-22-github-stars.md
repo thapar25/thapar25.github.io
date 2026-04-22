@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Everyone in SF Knows GitHub Stars Are Fake. Nobody Cares.
-date: 2026-04-23
+date: 2026-04-22
 tags:
   - AI
   - GitHub
