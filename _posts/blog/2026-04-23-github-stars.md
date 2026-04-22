@@ -14,7 +14,7 @@ description: The perception of GitHub stars as a reliable indicator of project q
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/chart?repos=raga-ai-hub/RagaAI-Catalyst%2Cnousresearch/hermes-agent&type=date&legend=top-left)
+![Star History Chart](https://api.star-history.com/chart?repos=raga-ai-hub/RagaAI-Catalyst%2Cnousresearch/hermes-agent&type=date&legend=top-left)
 
 There's a repo on GitHub right now with 14,000 stars, a gorgeous README, and code that hasn't had a meaningful commit in eight months. You've probably starred something like it. So have I.
 
