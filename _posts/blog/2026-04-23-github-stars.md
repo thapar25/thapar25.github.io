@@ -12,13 +12,9 @@ description: The perception of GitHub stars as a reliable indicator of project q
 ---
 ## Are Star Histories OSS Milestones?
 
-<a href="https://www.star-history.com/?repos=raga-ai-hub%2FRagaAI-Catalyst%2Cnousresearch%2Fhermes-agent&type=date&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=raga-ai-hub/RagaAI-Catalyst%2Cnousresearch/hermes-agent&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=raga-ai-hub/RagaAI-Catalyst%2Cnousresearch/hermes-agent&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=raga-ai-hub/RagaAI-Catalyst%2Cnousresearch/hermes-agent&type=date&legend=top-left" />
- </picture>
-</a>
+## Star History
+
+[![Star History Chart](https://api.star-history.com/chart?repos=raga-ai-hub/RagaAI-Catalyst%2Cnousresearch/hermes-agent&type=date&legend=top-left)
 
 There's a repo on GitHub right now with 14,000 stars, a gorgeous README, and code that hasn't had a meaningful commit in eight months. You've probably starred something like it. So have I.
 
