@@ -5,8 +5,8 @@
 
 A knowledge base blog powered by Obsidian and Jekyll. Articles are drafted in Obsidian, converted to Markdown, and automatically published to GitHub Pages.
 
-[![Deploy](https://github.com/thapar25/thapar25.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/thapar25/thapar25.github.io/actions/workflows/deploy.yml)
-[![Live](https://img.shields.io/website?url=https%3A%2F%2Fthapar25.github.io&label=live&style=flat-square&color=brightgreen)](https://thapar25.github.io)
+[![Deploy](https://github.com/thapar25/thapar25.github.io/actions/workflows/deploy.yaml/badge.svg)](https://github.com/thapar25/thapar25.github.io/actions/workflows/deploy.yaml)
+
 ---
 
 ## ⚙️ Project Structure Overview
