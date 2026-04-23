@@ -105,6 +105,70 @@ html.dark {
   color: inherit; line-height: inherit;
 }
 
+
+.connect-bar {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface);
+  padding: 8px 16px;
+  border-radius: 999px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  z-index: 200;
+  white-space: nowrap;
+  transition: opacity 0.25s, pointer-events 0.25s;
+}
+
+.connect-bar-icon {
+  display: flex;
+  align-items: center;
+  padding: 4px 6px;
+  border-radius: 50%;
+  transition: opacity 0.15s;
+}
+
+.connect-bar-icon:hover { opacity: 0.75; }
+
+.connect-bar-icon .svg-icon {
+  fill: var(--surface-fg);
+  width: 18px;
+  height: 18px;
+}
+
+.connect-bar-cta {
+  margin-left: 8px;
+  padding: 4px 12px 4px 16px;
+  border-left: 1px solid rgba(255,255,255,0.25);
+  font-size: 0.82em;
+  font-weight: 500;
+  color: var(--surface-fg);
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.connect-bar-cta:hover { opacity: 0.75; color: var(--surface-fg); }
+
+.connect-bar-collapse {
+  display: none;
+  background: none; border: none; cursor: pointer;
+  color: var(--surface-fg); font-size: 1.1em;
+  padding: 0 2px; line-height: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .connect-bar-collapse { display: block; }
+
+  .connect-bar .connect-bar-icon,
+  .connect-bar .connect-bar-cta { display: none; }
+
+  .connect-bar.open .connect-bar-icon { display: flex; }
+  .connect-bar.open .connect-bar-cta { display: block; }
+}
+
 .contact-form input, .contact-form textarea {
   width: 100%; box-sizing: border-box;
   border: 1px solid var(--border-mid); border-radius: 4px;

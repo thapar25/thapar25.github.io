@@ -1,3 +1,26 @@
+<div class="connect-bar" id="connect-bar">
+  {%- if site.linkedin_username -%}
+  <a href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}" class="connect-bar-icon" title="LinkedIn" target="_blank" rel="noopener">
+    <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>
+  </a>
+  {%- endif -%}
+  {%- if site.github_username -%}
+  <a href="https://github.com/{{ site.github_username | cgi_escape | escape }}" class="connect-bar-icon" title="GitHub" target="_blank" rel="noopener">
+    <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+  </a>
+  {%- endif -%}
+  {%- if site.twitter_username -%}
+  <a href="https://x.com/{{ site.twitter_username | cgi_escape | escape }}" class="connect-bar-icon" title="X" target="_blank" rel="noopener">
+    <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg>
+  </a>
+  {%- endif -%}
+  <a href="{{ '/feed.xml' | relative_url }}" class="connect-bar-icon" title="RSS Feed" target="_blank" rel="noopener">
+    <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg>
+  </a>
+  <a href="{{ '/contact/' | relative_url }}" class="connect-bar-cta">Get in touch</a>
+  <button class="connect-bar-collapse" id="connect-bar-toggle" aria-label="Toggle connect bar">🔗</button>
+</div>
+
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
@@ -22,3 +45,25 @@
   </div>
 
 </footer>
+
+<script>
+(function () {
+  var bar = document.getElementById('connect-bar');
+  var toggle = document.getElementById('connect-bar-toggle');
+  var footer = document.querySelector('.site-footer');
+  if (!bar || !footer) return;
+
+  new IntersectionObserver(function (entries) {
+    var visible = entries[0].isIntersecting;
+    bar.style.opacity = visible ? '0' : '';
+    bar.style.pointerEvents = visible ? 'none' : '';
+  }).observe(footer);
+
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var open = bar.classList.toggle('open');
+      toggle.textContent = open ? '×' : '🔗';
+    });
+  }
+})();
+</script>
