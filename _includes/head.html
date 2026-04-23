@@ -13,4 +13,17 @@
   <link rel="icon" href="{{ "/assets/favicon.png" | relative_url }}" type="image/png">
   <link rel="icon" href="{{ "/assets/favicon.svg" | relative_url }}" type="image/svg+xml">
   <script>if(localStorage.getItem('dark')==='1')document.documentElement.classList.add('dark');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pulkit Thapar",
+    "url": "{{ site.url }}",
+    "sameAs": [
+      "https://twitter.com/{{ site.twitter_username }}",
+      "https://linkedin.com/in/{{ site.linkedin_username }}",
+      "https://github.com/{{ site.github_username }}"
+    ]
+  }
+  </script>
 </head>

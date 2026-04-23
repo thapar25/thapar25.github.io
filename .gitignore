@@ -3,6 +3,10 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
 # Obsidian Vault
 .obsidian
 template/
+
+# jekyll-wikilinks auto-generated graph
+assets/graph-net-web.json

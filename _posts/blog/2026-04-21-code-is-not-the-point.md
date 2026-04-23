@@ -67,4 +67,3 @@ Future developers, human or otherwise, will not just need the source. They will 
 Code was always a means to an end. The agent era did not change that. It just made it impossible to pretend otherwise.
  
 The question now is not whether your code is clean. It is whether your thinking is.
- 

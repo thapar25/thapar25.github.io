@@ -30,6 +30,17 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
+  {%- if page.backlinks and page.backlinks.size > 0 -%}
+  <div class="post-backlinks">
+    <h4>Linked mentions</h4>
+    <ul>
+      {%- for backlink in page.backlinks -%}
+      <li><a href="{{ backlink.doc.url | relative_url }}">{{ backlink.doc.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  {%- endif -%}
+
 </article>
 
 <script>

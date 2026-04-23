@@ -19,13 +19,22 @@ This site uses the Jekyll static site generator. All article content must be wri
 
 ## ✍️ How to Write an Article (The Workflow)
 
-The primary workflow revolves around the Obsidian export process.
+Articles are written directly in Obsidian inside `_posts/blog/` — the vault root. No copy-paste step needed.
 
-1.  **Draft:** Write your article in Obsidian (or Notion).
-2.  **Metadata:** Manually ensure the article's content starts with the Jekyll **YAML Front Matter** block at the very top of the Markdown file.
-3.  **Clean:** Copy the fully formatted Markdown content.
-4.  **Paste & Commit:** Paste the content into a new file in the local `_posts/` directory (e.g., `2024-05-28-new-article.md`).
-5.  **Publish:** Commit the new file and push to GitHub. Jekyll handles the rest!
+1.  **Draft:** Write your article in Obsidian inside `_posts/blog/`.
+2.  **Metadata:** Add the Jekyll YAML Front Matter block at the top of the file.
+3.  **Link:** Use `[[filename|display text]]` wikilinks to connect related posts — they render as real links on the site and appear as edges in Obsidian's Graph View.
+4.  **Publish:** Commit and push — GitHub Actions builds automatically.
+
+### 🔗 Wikilinks & Graph View
+
+This site uses [`jekyll-wikilinks`](https://github.com/manunamz/jekyll-wikilinks) to convert Obsidian's native `[[wikilink]]` syntax into real HTML links at build time.
+
+- **In Obsidian:** `[[2026-04-19-luna-backend|The Underdog Stack]]` renders as a clickable link and draws an edge in Graph View.
+- **On the site:** The same link becomes `<a href="/2026/04/19/luna-backend.html">The Underdog Stack</a>`.
+- **Backlinks:** Each post automatically shows a "Linked mentions" section listing every post that links to it — mirroring Obsidian's backlinks panel.
+
+The graph you see in Obsidian is the exact same link structure search engines crawl.
 
 ### ⭐️ Required Front Matter Format
 

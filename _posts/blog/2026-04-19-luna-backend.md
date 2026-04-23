@@ -17,7 +17,7 @@ If you've watched Suits, you already get it. [(incase you're uncultured)](https:
 
 I wanted that. Something omnipresent, anticipatory, works across every context. I called it **Luna** instead of The Donna because the vision was never just one interface. A shortcut, a WhatsApp message, a Slack command, an n8n automation. Same brain, different doors.
 
-The [last post](https://thapar25.github.io/2026/04/12/luna-ios-shortcut.html) covered the front door: an iOS shortcut on my lock screen, one tap, voice memo fired into a backend. This post is about what is behind that door, what it actually runs on, and why I am rebuilding it before adding anything new.
+The [[2026-04-12-luna-ios-shortcut|last post]] covered the front door: an iOS shortcut on my lock screen, one tap, voice memo fired into a backend. This post is about what is behind that door, what it actually runs on, and why I am rebuilding it before adding anything new.
 
 ---
 

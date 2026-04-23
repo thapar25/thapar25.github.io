@@ -74,6 +74,6 @@ The shortcut wins by elimination for now. Not the dream interface. The honest on
 
 ## What's next
 
-The next post covers the backend: how I'm running a full multi-agent system at near-zero cost by distributing across LLM providers. [Groq](https://groq.com) for routing, [OpenRouter](https://openrouter.ai) with round-robin key rotation for agents, [Gemini](https://deepmind.google/models/gemini/) as fallback. Plus caching, tool calls, and the feedback loop I'm using to improve Luna over time.
+[[2026-04-19-luna-backend|The next post]] covers the backend: how I'm running a full multi-agent system at near-zero cost by distributing across LLM providers. [Groq](https://groq.com) for routing, [OpenRouter](https://openrouter.ai) with round-robin key rotation for agents, [Gemini](https://deepmind.google/models/gemini/) as fallback. Plus caching, tool calls, and the feedback loop I'm using to improve Luna over time.
 
 The shortcut is intentionally dumb. The backend is where it gets interesting.
