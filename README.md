@@ -1,7 +1,8 @@
 # 📘 thapar25.github.io
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue.svg)](https://pages.github.com/)
-[![Powered by Jekyll](https://img.shields.io/badge/Powered%20by-Jekyll-lightgrey.svg)](https://jekyllrb.com/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-0d1117?logo=github&logoColor=white&style=flat-square)](https://pages.github.com/)
+[![Jekyll](https://img.shields.io/badge/Jekyll-CC0000?logo=jekyll&logoColor=white&style=flat-square)](https://jekyllrb.com/)
+[![Obsidian](https://img.shields.io/badge/Obsidian-7C3AED?logo=obsidian&logoColor=white&style=flat-square)](https://obsidian.md/)
 
 A knowledge base blog powered by Obsidian and Jekyll. Articles are drafted in Obsidian, converted to Markdown, and automatically published to GitHub Pages.
 
