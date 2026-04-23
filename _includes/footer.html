@@ -1,3 +1,4 @@
+{%- if page.url == '/' -%}
 <div class="connect-bar" id="connect-bar">
   {%- if site.linkedin_username -%}
   <a href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}" class="connect-bar-icon" title="LinkedIn" target="_blank" rel="noopener">
@@ -20,6 +21,7 @@
   <a href="{{ '/contact/' | relative_url }}" class="connect-bar-cta">Get in touch</a>
   <button class="connect-bar-collapse" id="connect-bar-toggle" aria-label="Toggle connect bar">🔗</button>
 </div>
+{%- endif -%}
 
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
