@@ -139,7 +139,8 @@ html.dark {
   height: 18px;
 }
 
-.connect-bar-cta {
+.connect-bar-cta,
+.connect-bar-cta:visited {
   margin-left: 8px;
   padding: 4px 12px 4px 16px;
   border-left: 1px solid rgba(255,255,255,0.25);
@@ -151,6 +152,9 @@ html.dark {
 }
 
 .connect-bar-cta:hover { opacity: 0.75; color: var(--surface-fg); }
+
+html.dark .connect-bar-cta,
+html.dark .connect-bar-cta:visited { color: var(--surface-fg); }
 
 .connect-bar-collapse {
   display: none;
