@@ -36,6 +36,9 @@ html.dark {
   .site-title:visited { color: var(--text); }
   .site-nav .page-link { color: var(--text); }
   .site-nav         { background-color: var(--bg); border-color: var(--border); }
+  @media screen and (max-width: 600px) {
+    .site-nav       { background: transparent; border: none; }
+  }
   .site-footer      { background-color: var(--bg); border-top-color: var(--border); color: var(--text-muted); }
   .footer-heading   { color: var(--text); }
   a                 { color: var(--link); }
