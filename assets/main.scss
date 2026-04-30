@@ -164,6 +164,20 @@ html.dark .connect-bar-cta:visited { color: var(--surface-fg); }
 }
 
 @media screen and (max-width: 600px) {
+  .site-nav input:checked ~ .trigger {
+    display: flex;
+    align-items: center;
+    padding: 4px 10px 8px;
+  }
+  .site-nav .page-link {
+    flex: 0 0 auto;
+    margin-left: 0;
+  }
+  .site-nav .dark-toggle {
+    margin-left: auto;
+    padding: 0 4px;
+  }
+
   .connect-bar-collapse { display: block; }
 
   .connect-bar .connect-bar-icon,
