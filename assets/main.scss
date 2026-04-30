@@ -164,6 +164,20 @@ html.dark .connect-bar-cta:visited { color: var(--surface-fg); }
 }
 
 @media screen and (max-width: 600px) {
+  .site-nav {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .icon-close { display: none; }
+  .site-nav input:checked ~ label .icon-hamburger { display: none; }
+  .site-nav input:checked ~ label .icon-close {
+    display: inline;
+    stroke: currentColor;
+    fill: none;
+  }
+
   .site-nav input:checked ~ .trigger {
     display: flex;
     align-items: center;
