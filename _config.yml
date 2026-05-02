@@ -59,3 +59,4 @@ exclude:
   - vendor/ruby/
   - README.md
   - CLAUDE.md
+  - assets/graph-net-web.json
