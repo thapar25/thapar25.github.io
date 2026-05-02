@@ -5,6 +5,8 @@ title: Obsidian's CEO and I Had the Same Idea
 date: 2026-04-06 06:14:09 +0530
 ---
 
+![thapar.logs : Workflow Setup](/assets/images/thapar-logs-setup.jpeg)
+
 I was walking Murphy, my dog, when it hit me.
 
 I'm a developer. I don't want to *engineer* my blog. Markdown is already my first language. Turns out it's an LLM's too. And that's when I thought, *why not also write this blog in markdown*?
