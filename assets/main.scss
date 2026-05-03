@@ -47,7 +47,13 @@ html.dark {
   blockquote        { color: var(--text-muted); border-left-color: var(--border-mid); }
   .post-meta        { color: var(--text-muted); }
   .svg-icon         { fill: var(--text-muted); }
-  hr                { border-color: var(--border); }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2em 0;
+  opacity: 0.9;
 }
 
 .post-tags {
