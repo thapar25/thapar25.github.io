@@ -59,6 +59,8 @@ The ambition is a full homelab nerve center in Slack. For now it is alerts. That
 
 ## 2. FitBit to Notion Fitness Tracker (11:59PM Daily)
 
+![Fitness Tracker](/assets/images/fitness-tracker-steps.png)
+
 Every night just before midnight, an automation pulls my step count from Google Health and writes it into my Notion fitness tracker.
 
 I do not think about it. I do not open the FitBit app. I do not manually log anything. The data is just there when I want to look at it.
