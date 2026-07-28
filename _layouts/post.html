@@ -5,15 +5,33 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    {%- if page.description -%}
+    <p class="post-description" itemprop="description">{{ page.description }}</p>
+    {%- endif -%}
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
     </p>
-    <p>
+    <p class="post-actions">
       <button class="copy-md-btn" onclick="copyAsMarkdown()" title="Copy post as Markdown for LLMs">Copy</button>
       <span class="copy-md-confirm" style="display:none;">Copied!</span>
+      <span class="ask-ai-dropdown"
+            data-title="{{ page.title | escape }}"
+            data-url="{{ page.url | absolute_url }}"
+            data-site="{{ site.title | escape }}">
+        <button class="copy-md-btn ask-ai-btn" onclick="toggleAskAiMenu(event)"
+                aria-haspopup="true" aria-expanded="false" title="Ask an AI to summarize this post">
+          Ask AI &#9662;
+        </button>
+        <span class="ask-ai-menu" hidden role="menu">
+          <a href="#" role="menuitem" onclick="return askAI('chatgpt', event)">ChatGPT</a>
+          <a href="#" role="menuitem" onclick="return askAI('claude', event)">Claude</a>
+          <a href="#" role="menuitem" onclick="return askAI('perplexity', event)">Perplexity</a>
+          <a href="#" role="menuitem" onclick="return askAI('google', event)">Google AI Overview</a>
+        </span>
+      </span>
     </p>
     {%- if page.tags and page.tags.size > 0 -%}
     <p class="post-tags">
@@ -69,6 +87,59 @@ function copyAsMarkdown() {
     setTimeout(function() { confirm.style.display = 'none'; }, 2000);
   });
 }
+
+var ASK_AI_PROVIDERS = {
+  chatgpt:    { base: 'https://chatgpt.com/', param: 'q', utmSource: 'chatgpt' },
+  claude:     { base: 'https://claude.ai/new', param: 'q', utmSource: 'claude' },
+  perplexity: { base: 'https://www.perplexity.ai/search', param: 'q', utmSource: 'perplexity' },
+  google:     { base: 'https://www.google.com/search', param: 'q', extraQuery: 'udm=50&aep=11', utmSource: 'google-ai-overview' }
+};
+
+function askAI(provider, event) {
+  if (event) event.preventDefault();
+  var cfg = ASK_AI_PROVIDERS[provider];
+  if (!cfg) return false;
+
+  var dropdown = event.target.closest('.ask-ai-dropdown');
+  var title = dropdown.dataset.title;
+  var site = dropdown.dataset.site;
+  var articleUrl = dropdown.dataset.url + '?utm_source=' + cfg.utmSource + '&utm_medium=ai-referral&utm_campaign=ask-ai';
+  var prompt = 'Summarize the article titled "' + title + '" on ' + site + ': ' + articleUrl;
+
+  var query = (cfg.extraQuery ? cfg.extraQuery + '&' : '') + cfg.param + '=' + encodeURIComponent(prompt);
+  window.open(cfg.base + '?' + query, '_blank', 'noopener');
+
+  closeAskAiMenu();
+  return false;
+}
+
+function toggleAskAiMenu(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  var menu = document.querySelector('.ask-ai-menu');
+  var btn = document.querySelector('.ask-ai-btn');
+  if (menu.hidden) {
+    menu.hidden = false;
+    btn.setAttribute('aria-expanded', 'true');
+  } else {
+    closeAskAiMenu();
+  }
+}
+
+function closeAskAiMenu() {
+  var menu = document.querySelector('.ask-ai-menu');
+  var btn = document.querySelector('.ask-ai-btn');
+  if (menu) menu.hidden = true;
+  if (btn) btn.setAttribute('aria-expanded', 'false');
+}
+
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.ask-ai-dropdown')) closeAskAiMenu();
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') closeAskAiMenu();
+});
 
 function htmlToMarkdown(el) {
   var out = '';
