@@ -8,7 +8,7 @@ tags:
 description: A legacy fuel station box that wouldn't stay on the network, why vendor lock-in made it that way, and how a laptop-side hack got us talking to it without touching a thing.
 ---
 
-![Access Denied Meme](/assets/images/access-denied.png)
+![Confused Unga GIF](https://c.tenor.com/S-y2qw-zuWMAAAAC/tenor.gif)
 
 Somewhere in the middle of debugging a dead connection, I made the mistake of asking Claude for a caveman translation of the whole ordeal. It refused to leave my head.
 
