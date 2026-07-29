@@ -28,9 +28,9 @@ The software works exactly as designed. It just wasn't designed for the person r
 
 ## Look, No Touch.
 
-The box itself runs Linux. PHP and SQLite underneath, a JSON-RPC layer on top, the kind of stack that looks intimidating until you've spent enough weekends poking around your own homelab.
+The box itself runs Linux. PHP and SQLite underneath, a JSON-RPC layer on top, the kind of stack that looks intimidating until you've spent enough weekends poking around your own [[2026-04-11-immich|homelab]].
 
-That's the part that transferred directly. Months of SSH-ing into machines that weren't mine to break gave me the instinct for this one too: look everywhere, touch nothing. Claude Code helped map the filesystem, find the database, work out what each table actually held.
+That's the part that transferred directly. Months of SSH-ing into machines that weren't mine to break gave me the [[2026-06-13-why-i-automate|instinct]] for this one too: look everywhere, touch nothing. Claude Code helped map the filesystem, find the database, work out what each table actually held.
 
 Every query built from here reads. None of them write. The box keeps doing exactly what it was doing before we showed up. We just started listening in.
 
@@ -38,7 +38,7 @@ Every query built from here reads. None of them write. The box keeps doing exact
 
 Reading the box meant reaching the box, and reaching it was the actual fight.
 
-It ran on it's own SIM module, could connect to Wi-Fi, but the enterprise hardware's power-saving mode kept dropping the connection overnight. Every morning, someone had to physically walk over and reconnect it before anything downstream could even start.
+It ran on its own SIM module, could connect to Wi-Fi, but the enterprise hardware's power-saving mode kept dropping the connection overnight. Every morning, someone had to physically walk over and reconnect it before anything downstream could even start.
 
 That's not a system. That's a chore with extra steps.
 
