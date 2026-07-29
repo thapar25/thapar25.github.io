@@ -71,7 +71,7 @@ document.querySelectorAll('.post-content h2, .post-content h3, .post-content h4'
   h.appendChild(a);
 });
 
-function copyAsMarkdown() {
+function getPostMarkdown() {
   var content = document.querySelector('.e-content');
   var clone = content.cloneNode(true);
 
@@ -80,8 +80,11 @@ function copyAsMarkdown() {
 
   // Convert HTML to plain markdown-ish text
   var md = '# {{ page.title | escape }}\n\n' + htmlToMarkdown(clone);
+  return md.trim();
+}
 
-  navigator.clipboard.writeText(md.trim()).then(function() {
+function copyAsMarkdown() {
+  navigator.clipboard.writeText(getPostMarkdown()).then(function() {
     var confirm = document.querySelector('.copy-md-confirm');
     confirm.style.display = 'inline';
     setTimeout(function() { confirm.style.display = 'none'; }, 2000);
@@ -95,6 +98,8 @@ var ASK_AI_PROVIDERS = {
   google:     { base: 'https://www.google.com/search', param: 'q', extraQuery: 'udm=50&aep=11', utmSource: 'google-ai-overview' }
 };
 
+var ASK_AI_MAX_CONTENT_CHARS = 6000;
+
 function askAI(provider, event) {
   if (event) event.preventDefault();
   var cfg = ASK_AI_PROVIDERS[provider];
@@ -104,7 +109,14 @@ function askAI(provider, event) {
   var title = dropdown.dataset.title;
   var site = dropdown.dataset.site;
   var articleUrl = dropdown.dataset.url + '?utm_source=' + cfg.utmSource + '&utm_medium=ai-referral&utm_campaign=ask-ai';
-  var prompt = 'Summarize the article titled "' + title + '" on ' + site + ': ' + articleUrl;
+
+  var body = getPostMarkdown();
+  if (body.length > ASK_AI_MAX_CONTENT_CHARS) {
+    body = body.slice(0, ASK_AI_MAX_CONTENT_CHARS) + '\n\n...(truncated)';
+  }
+
+  var prompt = 'Summarize the following article titled "' + title + '" from ' + site +
+    ' (' + articleUrl + '):\n\n' + body;
 
   var query = (cfg.extraQuery ? cfg.extraQuery + '&' : '') + cfg.param + '=' + encodeURIComponent(prompt);
   window.open(cfg.base + '?' + query, '_blank', 'noopener');
