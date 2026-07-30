@@ -33,7 +33,7 @@ There's no B2B contract sitting on the other side of someone asking a phone what
 
 Dost.AI is a React Native Android app, built voice first because voice is the one interface *almost* everyone already knows how to use, regardless of whether they ever learned to read a screen.
 
-![Dost AI Demo](/assets/images/dost-demo.gif)
+![Dost AI Demo](/assets/images/dost-demo-square.gif)
 
 Under the hood it's an STT-LLM-TTS sandwich, and every layer is deliberately provider-agnostic. I didn't want a single voice vendor's outage or price hike to take the whole thing down.
 
@@ -44,6 +44,8 @@ Under the hood it's an STT-LLM-TTS sandwich, and every layer is deliberately pro
 The app uses location services to set a default language automatically. Right now Punjabi and Marathi are the two dialects actually live and in use, spreading through me and my uncle handing out APKs to whoever's willing to try it.
 
 <img src="/assets/images/dost-location-services-permission.png" alt="Dost Location Services" style="max-width: 280px;">
+
+For the interactions themselves, I borrowed patterns people already trust instead of inventing new ones. Press and hold to talk, swipe to delete a message. Straight out of WhatsApp, which is closer to a universal language in India than English ever was. If someone already knows how to send a voice note to their cousin, they already know how to talk to Dost.AI.
 
 ## The pilot is smaller than you'd think, and that's the point
 
@@ -75,7 +77,7 @@ There's also a harder problem I'm circling, one nobody in India is seriously sol
 
 > Take the money out of tech and watch how many founders are still standing there wanting to solve problems.
 
-Watch how many developers are too, because this isn't just a founder problem, it's a herd mentality problem, *bhedchaal*, and there's no clean English word for how well that captures it.
+Watch how many developers are too. Call it *bhedchaal*, herd mentality doesn't quite capture it. Most of us are building what's fundable, not necessarily what's needed, and it's worth occasionally asking which one we're actually optimizing for.
 
 This isn't building toward something that eventually raises a round and serves the top slice of people who can already afford every tool that exists. I wanted to contribute something back, to people the industry has quietly decided aren't worth building for.
 
