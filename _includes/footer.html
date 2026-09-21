@@ -46,11 +46,35 @@
 
     <p class="footer-meta-links" style="font-size:0.8em;opacity:0.7;">
       <a href="{{ '/llms.txt' | relative_url }}">llms.txt</a> - machine-readable site summary for AI agents
+      <span id="total-visits" style="margin-left:0.6em;">· total visits: <span id="total-visits-count"></span></span>
     </p>
 
   </div>
 
 </footer>
+
+<!-- GoatCounter hit counter (https://goatcounter.com) — counts every page load -->
+<script data-goatcounter="https://{{ site.goatcounter }}/count" async src="//gc.zgo.at/count.js"></script>
+{%- if site.goatcounter -%}
+<script>
+(function () {
+  // Site total via GoatCounter's public JSON endpoint ("TOTAL" special path);
+  // rendered as plain text. Hide the label if the endpoint is unavailable.
+  var slot = document.getElementById('total-visits-count');
+  if (!slot) return;
+  var hide = function () {
+    var span = document.getElementById('total-visits');
+    if (span) span.style.display = 'none';
+  };
+  fetch('https://{{ site.goatcounter }}/counter/TOTAL.json')
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) {
+      if (d && d.count) { slot.textContent = d.count; } else { hide(); }
+    })
+    .catch(hide);
+})();
+</script>
+{%- endif -%}
 
 <script>
 (function () {

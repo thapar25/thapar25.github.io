@@ -28,6 +28,10 @@ twitter_username: pulkitthapar
 github_username:  thapar25
 linkedin_username: pulkit-thapar
 google_analytics: G-WKR7C1KL9R
+# GoatCounter — register at https://goatcounter.com, paste your site code below
+# (it looks like "abc123.goatcounter.com"), and enable "Allow adding visitor
+# counts on your website" in the site settings.
+goatcounter: thapar-logs.goatcounter.com
 image: /assets/og-image.png
 
 # Build settings
