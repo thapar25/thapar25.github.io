@@ -322,6 +322,12 @@ html.dark .connect-bar-cta:visited { color: var(--surface-fg); }
   border-radius: 10px;
 }
 
+.post-content iframe[src*="youtube"] {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 .contact-form input, .contact-form textarea {
   width: 100%; box-sizing: border-box;
   border: 1px solid var(--border-mid); border-radius: 4px;
