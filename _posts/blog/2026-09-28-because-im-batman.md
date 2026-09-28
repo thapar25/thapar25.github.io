@@ -18,7 +18,7 @@ By day, Bruce Wayne. Founder, pitches, pleasantries. By night, the work I actual
 
 For the past two weeks, the day shift has been a crash course in sales. Leads. Distribution. Vocabulary I had filed under "for MBAs only" is now very much on my plate.
 
-The reason: I started a company. XLR8 Labs.
+The reason: I started a company. [XLR8 Labs](https://xlr8labs.in/?utm_source=thapar25.github.io&utm_medium=blog&utm_campaign=because-im-batman).
 
 I'd love a pocket deep enough to fund it while I tinker in the cave. That's not how the world works. Somebody has to sell the thing.
 
