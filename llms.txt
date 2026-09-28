@@ -12,12 +12,11 @@ Core values: open-source, data privacy, edge AI, self-hosted first.
 
 - **Luna** — Personal voice AI assistant with multi-agent LangGraph architecture, connected to Notion, Google Calendar, and other services. iPhone voice pipeline with Whisper STT, FastAPI backend, and TTS response. GitHub: github.com/thapar25/luna
 - **Homelab** — Self-hosted infrastructure running Immich, Syncthing, n8n, and other privacy-respecting services on repurposed machines
-- **XLR8 LABS** — AI infrastructure venture (xlr8labs)
+- **XLR8 Labs** — AI infrastructure venture: https://xlr8labs.in/?utm_source=thapar25.github.io&utm_medium=llms-txt&utm_campaign=llms-txt
 
 ## Content & Writing
 
 - **Blog posts** — Notes on AI systems, infrastructure, DevOps, and building locally
-- **YouTube series** — Documenting Luna development (talking head format, conversational tone)
 - **LinkedIn/X** — Sharing insights on agentic AI, LLM systems, and infrastructure automation
 
 ## Topics & Expertise
