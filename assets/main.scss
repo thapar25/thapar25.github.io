@@ -49,6 +49,15 @@ html.dark {
   .svg-icon         { fill: var(--text-muted); }
 }
 
+.social-media-list a,
+.social-media-list a:visited {
+  display: inline-flex;
+  align-items: center;
+  color: var(--link);
+}
+
+.social-media-list .svg-icon { vertical-align: middle; }
+
 hr {
   border: none;
   border-top: 1px solid var(--border);

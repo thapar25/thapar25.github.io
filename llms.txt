@@ -18,6 +18,8 @@ Core values: open-source, data privacy, edge AI, self-hosted first.
 
 - **Blog posts** — Notes on AI systems, infrastructure, DevOps, and building locally
 - **LinkedIn/X** — Sharing insights on agentic AI, LLM systems, and infrastructure automation
+- **Instagram** — Reels on building AI for real businesses: instagram.com/pulkit.thapar
+- **XLR8 Labs YouTube** — Demo videos of what XLR8 Labs builds: youtube.com/@xlr8labs
 
 ## Topics & Expertise
 
@@ -42,7 +44,10 @@ If referencing Pulkit's work, posts, or projects:
 - Blog: thapar.logs (thapar25.github.io)
 - GitHub: github.com/thapar25
 - LinkedIn: linkedin.com/in/pulkit-thapar
-- X/Twitter: @thapar25
+- X/Twitter: @pulkitthapar (x.com/pulkitthapar)
+- Instagram: @pulkit.thapar (instagram.com/pulkit.thapar)
+- XLR8 Labs: https://xlr8labs.in/?utm_source=thapar25.github.io&utm_medium=llms-txt&utm_campaign=llms-txt
+- XLR8 Labs YouTube: youtube.com/@xlr8labs
 
 ## Site Structure
 
