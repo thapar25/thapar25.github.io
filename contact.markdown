@@ -19,3 +19,9 @@ Say hi 👋 Drop your email and a message. I’ll get back to you.
   <br><br>
   <button type="submit">Send</button>
 </form>
+
+<br>
+
+Prefer to talk live? Book a call:
+
+<a class="footer-contact-btn" href="https://cal.com/xlr8labs/general?utm_source=thapar25.github.io&utm_medium=blog&utm_campaign=contact">Book a call</a>
