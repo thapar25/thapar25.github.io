@@ -1,9 +1,14 @@
 ---
 layout: post
-title: "The Entire History of You"
-date: 2026-11-25
-tags: [computer-vision, ai, luna, xlr8-labs, building-in-public]
-description: "A Black Mirror episode, a pair of cheap glasses, and the line I keep not crossing."
+title: The Entire History of You
+date: 2026-11-24
+tags:
+  - computer-vision
+  - ai
+  - luna
+  - xlr8-labs
+  - building-in-public
+description: A Black Mirror episode, a pair of cheap glasses, and the line I keep not crossing.
 ---
 
 ![The grain's rewind playback in "The Entire History of You"](/assets/images/the-grain-rewind.gif)
